@@ -8,8 +8,12 @@ img {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
+a{
+    text-decoration: none;
+    color: rgb(238, 230, 230);
+}
+a:active{
+    color: rgb(127, 255, 249);
 }
 
 p {
