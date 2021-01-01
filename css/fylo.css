@@ -388,6 +388,12 @@ main .form-wrapper {
   bottom: 17%;
 }
 
+@media only screen and (min-width: 765px) {
+  main .form-wrapper {
+    bottom: 15%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   main .form-wrapper {
     display: -ms-grid;
@@ -396,15 +402,11 @@ main .form-wrapper {
     width: 60%;
     -webkit-box-shadow: 0.3rem 0.3rem rgba(24, 24, 34, 0.3);
             box-shadow: 0.3rem 0.3rem rgba(24, 24, 34, 0.3);
-    margin-top: 6rem  !important;
+    bottom: 13%;
   }
 }
 
-@media only screen and (min-width: 765px) {
-  main .form-wrapper {
-    bottom: 15%;
-  }
-}
+
 
 main .form-wrapper .form-text {
   text-align: center;
