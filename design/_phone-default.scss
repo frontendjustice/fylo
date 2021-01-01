@@ -320,17 +320,19 @@ linear-gradient(to top, rgb(24, 31, 42), rgb(24, 31, 42) 42.5%, rgb(28, 36, 49)4
             position: absolute;
             z-index: 3;
             bottom: 17%;
+                @include mq(tablet){
+                bottom: 15%;
+                 }
+                
+        
             @include mq(laptop){
                 display: grid;
                 place-items: center;
                 width:60%;
                 box-shadow: 0.3rem 0.3rem rgba(24, 24, 34, 0.3);
-                margin-top: 6rem  !important;
+                bottom: 13%;
                 
-            }
-            @include mq(tablet){
-                bottom: 15%;
-                
+            
             }
 
 
