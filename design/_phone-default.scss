@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+*{
+    margin: 0; padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: $main-bg-color;
+    color: rgb(224, 217, 217);
+    font-family: 'Raleway', sans-serif;
+    
+   
+
+.container{
+    display: grid;
+    place-items: center;
+    position: relative;
+    
+
+    
+}
+
+}
+
+header{
+    background-color: $intro-and-email-sign-up-background;
+    background-image: url("../images/bg-curvy-mobile.svg"),
+linear-gradient(to top, rgb(24, 31, 42), rgb(24, 31, 42) 42.5%, rgb(28, 36, 49)42.5%);
+    background-position-y: 48.5%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+      
+    
+    
+}
+
+   
+    
+    
+    header{
+        padding: 0.5rem;
+        
+       
+        nav{
+            @include mq(laptop){
+                padding: 2.5rem;
+            }
+
+            @include mq (tablet){
+                padding: 1.5rem;
+            }
+            padding: 1rem;
+            .logo{
+                width: 30%;
+                @include mq (tablet){
+                width: 15%;
+                }
+                @include mq (laptop){
+                    width: 10%;
+                }
+
+                
+                
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .top-nav{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        padding:0 0 0 10px; 
+                        a{
+                            @include mq (tablet){
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .hero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+
+            img{
+                width: 80%;
+                position: relative;
+                top: 20px;
+                @include mq(laptop){
+                    width: 55%;
+                    top: 30px;
+                }
+            }
+        }
+        .hero-text{
+            display: flex;
+            flex-direction: column;
+            font-size: 0.8rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            display: block;
+            text-align: center;
+            @include mq(laptop){
+                font-size: 1.5rem;
+                margin-top: 3rem;
+            }
+                         
+            p{
+                padding: 1rem 1.6rem;
+                margin-bottom: 1rem;
+            
+            }
+
+            a{
+                background-color: rgb(57, 176, 206);
+                padding: 0.5rem 2rem;
+                border-radius: 20px;
+                @include mq(laptop){
+                    padding: 0.8rem 5rem;
+                    border-radius: 23px;
+                }
+
+             
+
+            }
+        }
+
+    }
+    main{
+        display: grid;
+        place-items: center;
+        width: 90%;
+        
+        .wrap-container-top{
+            display: grid;
+            place-items: center;
+
+            @include mq(laptop){
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 10rem;
+                grid-column-gap: 6rem;
+                width: 80%;
+            }
+            
+            .wrapper{
+                display: grid;
+                place-items: center;
+                margin-bottom: 5rem;
+                
+                img{
+                    width: 15%;
+                }
+                h3{
+                    display: block;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                    display: inline-block;
+                    padding: 0.5rem;
+                }
+                
+            }
+        }
+
+        .wrap-container-bottom{
+            display: grid;
+            place-items: center;
+
+            .wrap-them{
+            display: grid;
+            place-items: center;
+            margin-bottom: 4rem;
+            
+            @include mq(laptop){
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 6rem;
+                width: 80%;
+            }
+
+            img{
+                padding-bottom: 3rem;
+                display: block;
+                @include mq(laptop){
+                    width: 110%;
+                }
+            }
+            h3{
+                
+                padding-bottom: 1rem;
+                @include mq(laptop){
+                    font-size: 40px;
+                }
+                
+            }
+            p{
+                font-size: 16px;
+                padding-bottom: 2rem;
+                text-align: justify;
+                
+            }
+
+            a{
+                justify-self: start;
+                text-decoration: underline;
+            }
+            }
+        }
+
+        .client{
+            display: grid;
+            place-items: center;
+    
+
+            
+            @include mq(laptop){
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+
+            }
+
+            .client-1{
+                width: 90%;
+                background-color: $intro-and-email-sign-up-background;
+                margin-top: 2rem;
+                border-radius: 10px;
+                box-shadow:  0.3rem 0.3rem rgba(68, 68, 98, 0.3);
+                
+                @include mq(laptop){
+
+                    width: 30%;
+                
+                    
+
+            }
+                .client-wrap{
+                    padding: 2rem;
+                    p{
+                        font-size: 12px;
+                        @include mq(laptop){
+
+                    font-size: 15px;
+                
+                    
+
+            }
+            @include mq (tablet){
+                font-size: 18px;
+            }
+                    }
+
+                    .client-img{
+                        display: flex;
+                        margin-top: 1rem;
+                        img{
+                            width: 10%;
+                            height: 10%;
+                            border-radius: 100px;
+                            @include mq (tablet){
+                                width: 6%;
+                                margin-top: 0.1rem;
+                            }
+                        }
+
+                        .client-info{
+
+
+                            p{
+                                @include mq (tablet){
+                                    font-size: 17px;
+                                }
+                            }
+                           .sec-p{
+                            font-size: 10px;
+                            @include mq (tablet){
+                                font-size: 14px;
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .form-wrapper{
+            background-color: $intro-and-email-sign-up-background;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1rem 2rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 10rem;
+            position: absolute;
+            z-index: 3;
+            bottom: 17%;
+            @include mq(laptop){
+                display: grid;
+                place-items: center;
+                width:60%;
+                box-shadow: 0.3rem 0.3rem rgba(24, 24, 34, 0.3);
+                margin-top: 6rem  !important;
+                
+            }
+            @include mq(tablet){
+                bottom: 15%;
+                
+            }
+
+
+            .form-text{
+                text-align: center;
+                @include mq(laptop){
+                    width: 80%;
+                }
+                
+                h3{
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-bottom: 1rem;
+
+                    @include mq(laptop){
+                        font-size: 32px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+
+            .form{
+                display: flex;
+                flex-direction: column;
+                @include mq(laptop){
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+
+                #email{
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    margin-top: 2rem;
+                    outline: none;
+                    @include mq(laptop){
+                        padding-left: 2rem;
+                        padding-right: 10rem;
+                        padding-top: 0.8rem;
+                        padding-bottom: 0.8rem;
+                        
+
+                    }
+                    
+                }
+
+                a{
+                    background-color: rgb(46, 172, 204);
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    text-align: center;
+                    color: white;
+                    margin-top: 1.5rem;
+
+                    @include mq(laptop){
+                        font-size: 14px;
+                        padding: 0.8rem 2rem 0.8rem 2rem;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    footer{
+        background-color: hsl(216, 53%, 9%);
+        padding-top: 17rem;
+        width: 100%;
+
+        @include mq(laptop){
+            padding-top: 12rem;
+            display: grid;
+            place-items: center;
+            
+        }
+
+        .fylo-foot{
+            display: grid;
+            grid-row-gap: 1rem;
+            padding: 2rem;
+            @include mq(laptop){
+                place-items: center;
+                width: 90%;
+                margin-bottom: 4rem;
+
+            }
+            
+            .foot-wrap{
+                @include mq(laptop){
+                    display: grid;
+                    grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+                    grid-gap: 2rem;
+                    
+                    justify-content: center;
+                }
+            }
+            
+            img{
+                width: 60%;
+                @include mq(laptop){
+                    width: 15%;
+                    justify-self: start;
+                    
+                }
+            }
+
+            div p{
+                padding-top: 1rem;
+            }
+            .list{
+                ul{
+                    padding-top: 1rem;
+
+                    li{
+                        padding-top: 0.5rem;
+                    }
+                }
+                
+            }
+
+            .social{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include mq(laptop){
+                   justify-content: start;
+
+                }
+
+            }
+        }
+    }
+
+
+
